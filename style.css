@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'main';
+    src: url("ussr.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 200px;
+    font-family: main;
+    text-align: center;
+    font-size: 200px;
+}
