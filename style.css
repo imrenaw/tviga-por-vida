@@ -1,13 +1,89 @@
 @font-face {
-    font-family: 'main';
-    src: url("ussr.ttf") format('truetype');
+    font-family: 'ussr-army';
+    src: url('USSR Army.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-h1 {
-    margin-top: 200px;
-    font-family: main;
+header {
+    background-color: red;
+    height: 150px;
+    margin: 0
+}
+
+.twiga {
+    position: absolute;
+    font-family: ussr-army;
+    font-size: 100px;
+    left: 500px;
+    top: -80px;
     text-align: center;
-    font-size: 200px;
+    z-index: 2;
+}
+
+.nine-column {
+    display: flex;
+    flex-direction: column; /* Ставим в колонку */
+    align-items: flex-start; /* Выравнивание по левому краю, можешь поменять */
+    padding-left: 100px; /* Как было в margin */
+}
+
+.nine {
+    display: inline-block;
+    transform: scaleX(1.5);
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.top-nine-killer {
+    position: absolute;
+    height: 15px;
+    width: 200px;
+    background-color: red;
+    z-index: 1;
+    
+}
+
+.bottom-nine-killer {
+    position: absolute;
+    top: 130px;
+    height: 20px;
+    width: 200px;
+    background-color: red;
+    z-index: 1;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center; /* по центру по горизонтали */
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.red-star {
+    margin: 0px;
+    height: 25px;
+    width: auto;
+}
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li:hover {
+    cursor: grab;
 }
